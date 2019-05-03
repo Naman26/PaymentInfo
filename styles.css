@@ -1,0 +1,23 @@
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+body{
+    text-align: center;
+
+    background-color: #560000;
+}
+
+#form{
+    margin: auto;
+    background-color: floralwhite;
+    width: 30%;
+    font-size: 24px;
+}
+
+#submitButton{
+    color: azure;
+    font-size: 24px;
+    background-color: darkblue;
+    border-radius: 12px;
+}
