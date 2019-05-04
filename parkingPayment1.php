@@ -10,14 +10,14 @@
 </head>
 <body>
 <?php
-require "header.php";
+//require "header.php";
 ?>
 <main>
     <div id="form">
         <!--<h3>For 11:00 am  to 4:00 pm<br>-->
         <h3>Please fill out the Payment details</h3>
         <h4>Time Chosen: 7pm-12am</h4>
-        <form name="myForm" action="preparking.php" onsubmit="return validateForm()" method="post">
+        <form name="myForm" action="postParking.php" onsubmit="return validateForm()" method="post">
             Name*: <input type="text" name="fname"><br>
             License Plate*:<input type="text" name = "lNumber"><br>
             Phone Number*: <input type="text" name="pNumber"><br>
@@ -55,7 +55,7 @@ require "header.php";
     </div>
 </main>
 <?php
-require "footer.php";
+//require "footer.php";
 ?>
 </body>
 </html>

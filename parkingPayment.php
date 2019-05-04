@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php
-require "header.php";
+//require "header.php";
 ?>
 <main>
     <div id="form">
@@ -55,7 +55,7 @@ require "header.php";
     </div>
 </main>
 <?php
-require "footer.php";
-?>
+//require "footer.php";
+//?>
 </body>
 </html>
