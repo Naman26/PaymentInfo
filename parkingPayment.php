@@ -17,7 +17,7 @@
         <!--<h3>For 11:00 am  to 4:00 pm<br>-->
         <h3>Please fill out the Payment details</h3>
         <h4>Time Chosen: 7am-7pm</h4>
-        <form name="myForm" action="preparking.php" onsubmit="return validateForm()" method="post">
+        <form name="myForm" action="postParking.php" onsubmit="return validateForm()" method="post">
             Name*: <input type="text" name="fname"><br>
             License Plate*:<input type="text" name = "lNumber"><br>
             Phone Number*: <input type="text" name="pNumber"><br>
