@@ -1,23 +1,330 @@
-input{
-    margin-top: 5px;
-    margin-bottom: 5px;
+header img {
+    height: 80px;    
+    margin-left: 40px;
+	top:20px;
 }
-body{
+body {
+    height: 125vh;
+	background-image:url("images/Blurry-BackgroundGreen-Blue.jpg");
+    background-color: gray;
+    font-family: sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+}
+main {
+    color: black;
+}
+.wrapper-main {
+    background-color: white;
     text-align: center;
-
-    background-color: #560000;
+}
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 30px 0 black;
+	z-index:1;
+}
+header * {
+    display: inline;
+}
+header li {
+    margin: 20px;
+}
+header li a {
+    color: black;
+    text-decoration: none;
+}
+table, th, td {
+	border: 1px solid black;
+}
+table {
+	width: 100%;
+}
+table.shopping-cart {
+	width:70%;
+	border: 1px solid green;
+	margin:auto;
+}
+table.shopping-cart > td {
+	border:1px solid red;
+	
+}
+.flight-selection {
+	background-color:#7eb282;
+	display:inline-block;
+	padding:10px;
+	border-radius:10px;
 }
 
-#form{
-    margin: auto;
-    background-color: floralwhite;
-    width: 30%;
-    font-size: 24px;
+.selection-box {
+	height:40px;
+	font-size: 15pt;
+	text-align-last:center;
+	border-radius: 10px;
+	padding:4px;
 }
+.submit-button {
+	color:white;
+	font-weight:bold;
+	background-image:linear-gradient(to bottom right,#1fadc2,#0ac285);
+	border-radius:25px;
+	width:50px;
+	height:50px;
+	border: 1px solid #0fbd94;
+}
+img.shopping-cart{
+	height:30px;
+	width:30px;
+	margin-bottom:-10px;
+	margin-left:15px;
+}
+.header-login {
 
-#submitButton{
-    color: azure;
-    font-size: 24px;
-    background-color: darkblue;
-    border-radius: 12px;
+	
 }
+.myButton {
+    -moz-box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	background-color:#a73f2d;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+}
+.myButton:hover {
+	background-color:#b34332;
+}
+.inputField {
+    border: 5px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+}
+.login-status {
+	padding-top: 20px;
+    font-size: 25pt;
+	font-weight:bold;
+}
+.form-signup {
+    max-width:400px;
+	margin:50px auto;
+	background:#fff;
+	border-radius:2px;
+	padding:20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-signup h1 {
+    display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0px 0px 20px 0px;
+	color: #5C5C5C;
+	font-size:x-large;
+}
+.form-signup ul {
+    list-style:none;
+	padding:0;
+	margin:0;	
+}
+.form-signup li {
+    display: block;
+	padding: 9px;
+	border:1px solid #DDDDDD;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+.form-signup li:last-child {
+    border:none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.form-signup li > label {
+    display: block;
+	float: left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color: #B9B9B9;
+	font-size: 14px;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.form-signup input[type="text"],
+.form-signup input[type="email"],
+.form-signup input[type="password"] {
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* .form-signup input[type="text"]:focus,
+.form-signup input[type="email"]:focus,
+.form-signup input[type="password"]:focus {
+
+} */
+.form-signup li > span {
+    background: #F3F3F3;
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: #C0C0C0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.form-signup button {
+    background: #2471FF;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #5994FF;
+	border-radius: 3px;
+	color: #D2E2FF;
+}
+.form-signup button:hover {
+    background: #6B9FFF;
+	color:#fff;
+}
+.signup-error {
+	color: red;
+	font-size: 12pt;
+	font-weight: bold;
+}
+.signup-success {
+	color: green;
+	font-size: 12pt;
+	font-weight: bold;
+}
+.row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	margin: 0 -16px;
+  }
+  
+  .col-25 {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+  }
+  
+  .col-50 {
+	-ms-flex: 50%; /* IE10 */
+	flex: 50%;
+  }
+  
+  .col-75 {
+	-ms-flex: 75%; /* IE10 */
+	flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+	padding: 0 16px;
+  }
+  
+  .container {
+	background-color: #f2f2f2;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+  }
+
+  .checkout {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  }
+
+  .checkout-label {
+	margin-bottom: 10px;
+	display: block;
+  }
+
+  .icon-container {
+	margin-bottom: 20px;
+	padding: 7px 0;
+	font-size: 24px;
+	}
+	
+	.card-icon {
+		height: 40px;
+		width: 40px;
+		
+	}
+  
+  .btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px;
+	margin: 10px 0;
+	border: none;
+	width: 100%;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+  }
+  
+  .btn:hover {
+	background-color: #45a049;
+  }
+  
+  a {
+	color: #2196F3;
+  }
+  
+  hr {
+	border: 1px solid lightgrey;
+  }
+  
+  span.price {
+	float: right;
+	color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+	.row {
+	  flex-direction: column-reverse;
+	}
+	.col-25 {
+	  margin-bottom: 20px;
+	}
+  }
+
+  .checkout-box * {
+	box-sizing: border-box;
+  }

@@ -7,10 +7,11 @@ function validateForm() {
         return false;
     }
     else{
-        alert(x + number);
-        document.write (x);
-        document.write (number);
-        document.write (phNumber);
-        // window.location.href = ;
+        alert("Your parking has been reserved\nName: " + x + 
+            "\nPhone Number: " + phNumber + 
+            "\nTag Number: " + number);
+        //document.write (number);
+        //document.write (phNumber);
+        //window.location.href = ;
     }
 }
